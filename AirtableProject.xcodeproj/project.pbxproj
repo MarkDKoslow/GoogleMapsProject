@@ -12,6 +12,7 @@
 		E1A7F2831D7CE23D0094F38D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1A7F2811D7CE23D0094F38D /* Main.storyboard */; };
 		E1A7F2851D7CE23D0094F38D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1A7F2841D7CE23D0094F38D /* Assets.xcassets */; };
 		E1A7F2881D7CE23D0094F38D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1A7F2861D7CE23D0094F38D /* LaunchScreen.storyboard */; };
+		E1A7F2901D7CE67B0094F38D /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = E1A7F28F1D7CE67B0094F38D /* .gitignore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		E1A7F2841D7CE23D0094F38D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E1A7F2871D7CE23D0094F38D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E1A7F2891D7CE23D0094F38D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E1A7F28F1D7CE67B0094F38D /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +40,7 @@
 		E1A7F2711D7CE23D0094F38D = {
 			isa = PBXGroup;
 			children = (
+				E1A7F28F1D7CE67B0094F38D /* .gitignore */,
 				E1A7F27C1D7CE23D0094F38D /* AirtableProject */,
 				E1A7F27B1D7CE23D0094F38D /* Products */,
 			);
@@ -96,6 +99,7 @@
 				TargetAttributes = {
 					E1A7F2791D7CE23D0094F38D = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 89BWC9MT2T;
 					};
 				};
 			};
@@ -122,6 +126,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1A7F2901D7CE67B0094F38D /* .gitignore in Resources */,
 				E1A7F2881D7CE23D0094F38D /* LaunchScreen.storyboard in Resources */,
 				E1A7F2851D7CE23D0094F38D /* Assets.xcassets in Resources */,
 				E1A7F2831D7CE23D0094F38D /* Main.storyboard in Resources */,
@@ -251,6 +256,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = AirtableProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = MarkKoslow.AirtableProject;
@@ -262,6 +268,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = AirtableProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = MarkKoslow.AirtableProject;
