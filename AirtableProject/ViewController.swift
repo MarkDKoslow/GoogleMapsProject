@@ -33,6 +33,23 @@ class ViewController: UIViewController {
         marker.title = "Sydney"
         marker.snippet = "Australia"
         marker.map = mapView
+        
+        let url = NSURL(string: "https://api.airtable.com/v0/appJ8AGNLk708812e/RestaurantsList?api_key=keyk2tbwEshOdGpfd")
+        let session = NSURLSession.sharedSession().dataTaskWithURL(url!, completionHandler: { data, response, error in
+            guard error == nil else { print(error); return }
+            
+            if let data = data {
+                do {
+                    let json = try NSJSONSerialization.JSONObjectWithData(data, options: [])
+                    print("Printing JSON")
+                    print(json)
+                } catch {
+                    print("Could not be parsed properly")
+                }
+            }
+        })
+        
+        session.resume()
     }
 
     override func didReceiveMemoryWarning() {
