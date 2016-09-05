@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		89EC0C5174E3E46A1DBA3F1D /* Pods_AirtableProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 791F335E9C9892028902A99D /* Pods_AirtableProject.framework */; };
 		E1A7F27E1D7CE23D0094F38D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A7F27D1D7CE23D0094F38D /* AppDelegate.swift */; };
 		E1A7F2801D7CE23D0094F38D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A7F27F1D7CE23D0094F38D /* ViewController.swift */; };
 		E1A7F2831D7CE23D0094F38D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1A7F2811D7CE23D0094F38D /* Main.storyboard */; };
@@ -16,6 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5B83D7B0F9982AD8F6451339 /* Pods-AirtableProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AirtableProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AirtableProject/Pods-AirtableProject.debug.xcconfig"; sourceTree = "<group>"; };
+		791F335E9C9892028902A99D /* Pods_AirtableProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AirtableProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A603AAF9C2C95C746952ADE2 /* Pods-AirtableProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AirtableProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-AirtableProject/Pods-AirtableProject.release.xcconfig"; sourceTree = "<group>"; };
 		E1A7F27A1D7CE23D0094F38D /* AirtableProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AirtableProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1A7F27D1D7CE23D0094F38D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E1A7F27F1D7CE23D0094F38D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -31,18 +35,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89EC0C5174E3E46A1DBA3F1D /* Pods_AirtableProject.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		604522B30BCF92C451BC7D59 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				791F335E9C9892028902A99D /* Pods_AirtableProject.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A69AFFE08BEDF5C5DC258980 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5B83D7B0F9982AD8F6451339 /* Pods-AirtableProject.debug.xcconfig */,
+				A603AAF9C2C95C746952ADE2 /* Pods-AirtableProject.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		E1A7F2711D7CE23D0094F38D = {
 			isa = PBXGroup;
 			children = (
 				E1A7F28F1D7CE67B0094F38D /* .gitignore */,
 				E1A7F27C1D7CE23D0094F38D /* AirtableProject */,
 				E1A7F27B1D7CE23D0094F38D /* Products */,
+				A69AFFE08BEDF5C5DC258980 /* Pods */,
+				604522B30BCF92C451BC7D59 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,9 +98,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E1A7F28C1D7CE23D0094F38D /* Build configuration list for PBXNativeTarget "AirtableProject" */;
 			buildPhases = (
+				7C1DB5EC3B5784E36208C50E /* [CP] Check Pods Manifest.lock */,
 				E1A7F2761D7CE23D0094F38D /* Sources */,
 				E1A7F2771D7CE23D0094F38D /* Frameworks */,
 				E1A7F2781D7CE23D0094F38D /* Resources */,
+				79FFDE883CB57F37CB1E4482 /* [CP] Embed Pods Frameworks */,
+				7A20DF1EB7B7AD005128C281 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -134,6 +161,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		79FFDE883CB57F37CB1E4482 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AirtableProject/Pods-AirtableProject-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7A20DF1EB7B7AD005128C281 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AirtableProject/Pods-AirtableProject-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7C1DB5EC3B5784E36208C50E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E1A7F2761D7CE23D0094F38D /* Sources */ = {
@@ -254,6 +329,7 @@
 		};
 		E1A7F28D1D7CE23D0094F38D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B83D7B0F9982AD8F6451339 /* Pods-AirtableProject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -266,6 +342,7 @@
 		};
 		E1A7F28E1D7CE23D0094F38D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A603AAF9C2C95C746952ADE2 /* Pods-AirtableProject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -295,6 +372,7 @@
 				E1A7F28E1D7CE23D0094F38D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
