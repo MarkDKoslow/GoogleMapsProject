@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		89EC0C5174E3E46A1DBA3F1D /* Pods_AirtableProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 791F335E9C9892028902A99D /* Pods_AirtableProject.framework */; };
 		E19122381D7CF7C00033F19F /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19122371D7CF7C00033F19F /* Restaurant.swift */; };
+		E191223A1D7D05A20033F19F /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19122391D7D05A20033F19F /* APIClient.swift */; };
+		E191223C1D7D0C8C0033F19F /* Coordinates.swift in Sources */ = {isa = PBXBuildFile; fileRef = E191223B1D7D0C8C0033F19F /* Coordinates.swift */; };
+		E191223E1D7E7A360033F19F /* JSONProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = E191223D1D7E7A360033F19F /* JSONProtocols.swift */; };
+		E19122401D7FFBD50033F19F /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E191223F1D7FFBD50033F19F /* String+Extensions.swift */; };
 		E1A7F27E1D7CE23D0094F38D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A7F27D1D7CE23D0094F38D /* AppDelegate.swift */; };
 		E1A7F2801D7CE23D0094F38D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A7F27F1D7CE23D0094F38D /* ViewController.swift */; };
 		E1A7F2831D7CE23D0094F38D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1A7F2811D7CE23D0094F38D /* Main.storyboard */; };
@@ -22,6 +26,10 @@
 		791F335E9C9892028902A99D /* Pods_AirtableProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AirtableProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A603AAF9C2C95C746952ADE2 /* Pods-AirtableProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AirtableProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-AirtableProject/Pods-AirtableProject.release.xcconfig"; sourceTree = "<group>"; };
 		E19122371D7CF7C00033F19F /* Restaurant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
+		E19122391D7D05A20033F19F /* APIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		E191223B1D7D0C8C0033F19F /* Coordinates.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinates.swift; sourceTree = "<group>"; };
+		E191223D1D7E7A360033F19F /* JSONProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONProtocols.swift; sourceTree = "<group>"; };
+		E191223F1D7FFBD50033F19F /* String+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 		E1A7F27A1D7CE23D0094F38D /* AirtableProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AirtableProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1A7F27D1D7CE23D0094F38D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E1A7F27F1D7CE23D0094F38D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -65,6 +73,8 @@
 			isa = PBXGroup;
 			children = (
 				E19122371D7CF7C00033F19F /* Restaurant.swift */,
+				E191223B1D7D0C8C0033F19F /* Coordinates.swift */,
+				E191223D1D7E7A360033F19F /* JSONProtocols.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -93,7 +103,9 @@
 			children = (
 				E19122361D7CF7A10033F19F /* Models */,
 				E1A7F27D1D7CE23D0094F38D /* AppDelegate.swift */,
+				E19122391D7D05A20033F19F /* APIClient.swift */,
 				E1A7F27F1D7CE23D0094F38D /* ViewController.swift */,
+				E191223F1D7FFBD50033F19F /* String+Extensions.swift */,
 				E1A7F2811D7CE23D0094F38D /* Main.storyboard */,
 				E1A7F2841D7CE23D0094F38D /* Assets.xcassets */,
 				E1A7F2861D7CE23D0094F38D /* LaunchScreen.storyboard */,
@@ -227,8 +239,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				E1A7F2801D7CE23D0094F38D /* ViewController.swift in Sources */,
+				E19122401D7FFBD50033F19F /* String+Extensions.swift in Sources */,
+				E191223E1D7E7A360033F19F /* JSONProtocols.swift in Sources */,
 				E1A7F27E1D7CE23D0094F38D /* AppDelegate.swift in Sources */,
 				E19122381D7CF7C00033F19F /* Restaurant.swift in Sources */,
+				E191223A1D7D05A20033F19F /* APIClient.swift in Sources */,
+				E191223C1D7D0C8C0033F19F /* Coordinates.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
