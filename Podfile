@@ -6,9 +6,6 @@ target 'AirtableProject' do
 
   pod 'GoogleMaps'
   pod 'GooglePlaces'
-  pod 'TZStackView', '~> 1.1'
-  pod 'Cartography', git: 'https://github.com/robb/Cartography.git'
-  pod 'ReactiveCocoa', '~> 4.0'
   pod 'ModelMapper'
 
 end
